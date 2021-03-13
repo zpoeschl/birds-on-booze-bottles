@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="../images/favicon.png">
+	<title>By Bird - Swan | Birds on Booze Bottles</title>
+	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<header id="navbar" class="sticky">
+<!-- menu button -->
+<span style="font-size:25px;cursor:pointer;" onclick="openNav()">&#9776;</span>
+
+<!-- logo -->
+	<a href="index.html"><img src="../images/flamingo_logo2.png" alt="logo of Birds on Boooze Bottles"></a>
+</header>
+
+<!-- menu -->
+
+<nav id="sidenav" class="sidenav">
+ 	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;
+ </a>
+ 	<a href="../index.html">HOME</a>
+		<button class="dropdown-btn">EXPLORE
+			<i class="fa fa-chevron-circle-down"></i>
+		</button>
+		<div class="dropdown-container">
+			<button class="dropdown-btn2">by bird
+				<i class="fa fa-chevron-circle-down"></i>
+			</button>
+					<div class="dropdown-container">
+						<a href="bybird_cockatoo.html">COCKATOO</a>
+						<a href="bybird_duck.html">DUCK</a>
+						<a href="bybird_emu.html">EMU</a>
+						<a href="bybird_flamingo.html">FLAMINGO</a>
+						<a href="bybird_grouse.html">GROUSE</a>
+						<a href="bybird_hawk.html">HAWK</a>
+						<a href="bybird_heron.html">HERON</a>
+						<a href="bybird_kingfisher.html">KINGFISHER</a>
+						<a href="bybird_magpie.html">MAGPIE</a>
+						<a href="bybird_ostrich.html">OSTRICH</a>
+						<a href="bybird_owl.html">OWL</a>
+						<a href="bybird_rooster.html">ROOSTER</a>
+						<a href="bybird_spottedcrake.html">SPOTTED CRAKE</a>
+						<a href="bybird_superbfairywren.html">SUPERB FAIRYWREN</a>
+						<a href="bybird_swan.html">SWAN</a>
+						<a href="bybird_turkey.html">TURKEY</a>
+						<a href="bybird_woodpecker.html">WOODPECKER</a>
+					</div>
+			<button class="dropdown-btn2">by booze
+				<i class="fa fa-chevron-circle-down"></i>
+			</button>
+					<div class="dropdown-container">
+						<a href="bybooze_beer.html">BEER</a>
+						<a href="bybooze_cider.html">CIDER</a>
+						<a href="bybooze_liquor.html">LIQUOR</a>
+						<a href="bybooze_wine.html">WINE</a>
+					</div>
+			<button class="dropdown-btn2">by country
+				<i class="fa fa-chevron-circle-down"></i>
+			</button>
+					<div class="dropdown-container">
+						<a href="bycountry_australia.html">AUSTRALIA</a>
+						<a href="bycountry_canada.html">CANADA</a>
+						<a href="bycountry_england.html">ENGLAND</a>
+						<a href="bycountry_germany.html">GERMANY</a>
+						<a href="bycountry_japan.html">JAPAN</a>
+						<a href="bycountry_netherlands.html">NETHERLANDS</a>
+						<a href="bycountry_scotland.html">SCOTLAND</a>
+						<a href="bycountry_sweden.html">SWEDEN</a>
+						<a href="bycountry_usa.html">USA</a>
+					</div>
+		</div>
+ 	<a href="../about.html">ABOUT</a>
+ 	<a href="../contact.html">CONTACT</a>
+</nav>
+
+<!-- page content -->
+<div id="main">
+	<div class="content">
+<!-- image grid -->
+				<a href="bybird1_lion_swan_swandraught.html"><img src="../images/thumbnail_size/thumbnail-lion_swan_swandraught.png" alt="Lion Swan Draught"></a>
+	</div>
+</div>
+
+<script>
+function openNav() {
+	document.getElementById("sidenav").style.width = "250px";
+	document.getElementById("main").style.marginLeft= "250px";
+}
+function closeNav() {
+	document.getElementById("sidenav").style.width = "0";
+	document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+<script>
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+
+<script>
+var dropdown = document.getElementsByClassName("dropdown-btn2");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
